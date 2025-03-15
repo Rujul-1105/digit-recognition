@@ -1,0 +1,17 @@
+{
+  "name": "digit-recognition",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "description": "A web application for recognizing handwritten digits using TensorFlow and Node.js",
+  "main": "server.js",
+  "packages": {},
+  "scripts": {
+    "start": "node server.js",
+    "train": "python model/train_model.py"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Digit Recognition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Handwritten Digit Recognition</h1>
+        <p>Upload an image of a handwritten digit (0-9) and the model will predict the digit.</p>
+        
+        <div class="upload-area">
+            <form id="upload-form">
+                <div class="file-input">
+                    <input type="file" id="image-input" name="image" accept="image/*" required>
+                    <label for="image-input" class="file-label">Choose File</label>
+                    <span id="file-name">No file chosen</span>
+                </div>
+                <button type="submit" class="btn">Predict</button>
+            </form>
+        </div>
+        
+        <div id="results" class="hidden">
+            <div class="prediction-result">
+                <h2>Prediction</h2>
+                <div id="prediction-value"></div>
+            </div>
+            
+            <div class="uploaded-image">
+                <h3>Uploaded Image</h3>
+                <img id="uploaded-img" src="#" alt="Uploaded Image">
+            </div>
+        </div>
+        
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Processing...</p>
+        </div>
+        
+        <div id="error-message" class="hidden"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

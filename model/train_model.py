@@ -38,7 +38,7 @@ def train_model():
     
     print("Training model...")
     # Train the model
-    model.fit(X_train, y_train, batch_size=128, epochs=50, validation_data=(X_test, y_test))
+    model.fit(X_train, y_train, batch_size=128, epochs=10, validation_data=(X_test, y_test))
     
     # Evaluate the model
     score = model.evaluate(X_test, y_test, verbose=0)
